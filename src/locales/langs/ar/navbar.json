@@ -1,0 +1,24 @@
+{
+  "account": {
+    "home": "",
+    "logout": "",
+    "profile": "",
+    "projects": "",
+    "security": "",
+    "settings": "",
+    "subscription": ""
+  },
+  "app": "تطبيق",
+  "auth": {
+    "login": ""
+  },
+  "blog": {
+    "caption": "اختصارات لوحة المفاتيح المخصصة.",
+    "title": "مدونة"
+  },
+  "invoice": "فاتورة",
+  "job": "وظيفة",
+  "subheader": "العنوان الفرعي",
+  "travel": "السفر",
+  "user": "مستخدم"
+}

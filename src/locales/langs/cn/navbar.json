@@ -1,0 +1,24 @@
+{
+  "account": {
+    "home": "",
+    "logout": "",
+    "profile": "",
+    "projects": "",
+    "security": "",
+    "settings": "",
+    "subscription": ""
+  },
+  "app": "应用",
+  "auth": {
+    "login": ""
+  },
+  "blog": {
+    "caption": "自定义键盘快捷键。",
+    "title": "博客"
+  },
+  "invoice": "发票",
+  "job": "工作",
+  "subheader": "子标题",
+  "travel": "旅行",
+  "user": "用户"
+}

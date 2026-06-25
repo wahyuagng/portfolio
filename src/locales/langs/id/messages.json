@@ -1,0 +1,7 @@
+{
+  "languageSwitch": {
+    "error": "Gagal mengubah bahasa!",
+    "loading": "Loading...",
+    "success": "Bahasa berhasil dirubah!"
+  }
+}

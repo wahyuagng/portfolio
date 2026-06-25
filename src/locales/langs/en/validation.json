@@ -1,0 +1,8 @@
+{
+  "alphanumeric": "Only alphanumeric characters are allowed.",
+  "exactDigit": "Invalid length.",
+  "greaterThan": "Must be greater than {{min}}.",
+  "invalidFormat": "Invalid format.",
+  "passwordMatch": "Password doesn't match",
+  "required": "{{name}} is required."
+}

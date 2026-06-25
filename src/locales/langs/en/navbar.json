@@ -1,0 +1,24 @@
+{
+  "account": {
+    "home": "Home",
+    "logout": "Logout",
+    "profile": "Profile",
+    "projects": "Projects",
+    "security": "Security",
+    "settings": "Settings",
+    "subscription": "Subscription"
+  },
+  "app": "App",
+  "auth": {
+    "login": ""
+  },
+  "blog": {
+    "caption": "Custom keyboard shortcuts.",
+    "title": "Blog"
+  },
+  "invoice": "Invoice",
+  "job": "Job",
+  "subheader": "Sub header",
+  "travel": "Travel",
+  "user": "User"
+}

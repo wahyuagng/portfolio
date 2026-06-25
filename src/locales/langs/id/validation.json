@@ -1,0 +1,8 @@
+{
+  "alphanumeric": "Hanya karakter huruf dan angka yang diperbolehkan.",
+  "exactDigit": "Panjang karakter tidak valid.",
+  "greaterThan": "Harus lebih besar dari {{min}}.",
+  "invalidFormat": "Format tidak valid.",
+  "passwordMatch": "",
+  "required": "{{name}} tidak boleh kosong."
+}
