@@ -21,11 +21,8 @@ import { NavVertical } from './nav-vertical';
 import { NavHorizontal } from './nav-horizontal';
 import { useAccountMenu } from '../nav-config-account';
 import { MenuButton } from '../components/menu-button';
-import { AccountDrawer } from '../components/account-drawer';
 import { SettingsButton } from '../components/settings-button';
-import { navData as dashboardNavData } from '../nav-config-dashboard';
 import { dashboardLayoutVars, dashboardNavColorVars } from './css-vars';
-import { NotificationsButton } from '../components/notifications-button';
 import { MainSection, layoutClasses, HeaderSection, LayoutSection } from '../core';
 
 // ----------------------------------------------------------------------
@@ -52,7 +49,7 @@ export function DashboardLayout({ sx, cssVars, children, slotProps, layoutQuery 
 
     const { value: open, onFalse: onClose, onTrue: onOpen } = useBoolean();
 
-    const navData = slotProps?.nav?.data ?? dashboardNavData;
+    const navData = slotProps?.nav?.data ?? [];
     const isNavMini = settings.state.navLayout === 'mini';
     const isNavHorizontal = settings.state.navLayout === 'horizontal';
     const isNavVertical = isNavMini || settings.state.navLayout === 'vertical';
@@ -166,21 +163,8 @@ export function DashboardLayout({ sx, cssVars, children, slotProps, layoutQuery 
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 0, sm: 0.75 } }}>
                     {/** @slot Searchbar */}
                     {/*<Searchbar data={navData} />*/}
-                    <NotificationsButton />
-                    {/** @slot Language popover */}
-                    {/*<LanguagePopover data={localesConfig.options} />*/}
-
-                    {/** @slot Notifications popover */}
-                    {/*<NotificationsDrawer data={_notifications} />*/}
-
-                    {/** @slot Contacts popover */}
-                    {/*<ContactsPopover data={_contacts} />*/}
-
                     {/** @slot Settings button */}
                     {SETTING_VISIBLE && <SettingsButton />}
-
-                    {/** @slot Account drawer */}
-                    <AccountDrawer data={accountData} />
                 </Box>
             ),
         };
