@@ -18,14 +18,14 @@ const contactItems = [
         value: '+62 813-1082-6931',
         href: 'https://wa.me/6281310826931',
         icon: '💬',
-        description: 'Chat langsung via WhatsApp',
+        description: 'Chat directly via WhatsApp',
     },
     {
         label: 'Email',
         value: 'wahyuagungpriambudi@gmail.com',
         href: 'mailto:wahyuagungpriambudi@gmail.com',
         icon: '✉️',
-        description: 'Kirim email kapan saja',
+        description: 'Send an email anytime',
     },
     // {
     //     label: 'GitHub',
@@ -72,14 +72,14 @@ const Contact = () => {
                             color: 'text.primary',
                         }}
                     >
-                        Hubungi Saya
+                        Get In Touch
                     </Typography>
                     <Typography
                         variant="body2"
                         color="text.secondary"
                         sx={{ mt: 1.5, maxWidth: 440, mx: 'auto' }}
                     >
-                        Tertarik untuk berkolaborasi atau punya pertanyaan? Jangan ragu untuk menghubungi saya.
+                        Interested in working together or have a project in mind? Feel free to reach out.
                     </Typography>
                 </AnimatedBox>
 
@@ -87,9 +87,9 @@ const Contact = () => {
                 <Box
                     sx={{
                         display: 'grid',
-                        gridTemplateColumns: { xs: '1fr', sm: 'repeat(3, 1fr)' },
+                        gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' },
                         gap: 3,
-                        maxWidth: 780,
+                        maxWidth: 520,
                         mx: 'auto',
                     }}
                 >

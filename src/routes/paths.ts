@@ -29,7 +29,7 @@ const ROOTS = {
 
 export const paths = {
     faqs: '/faqs',
-    home: '/home',
+    home: '/',
     portofolio: '/portofolio',
     // AUTH
     auth: {

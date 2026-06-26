@@ -141,7 +141,7 @@ const Hero = () => {
                         {/* Status badge */}
                         <AnimatedBox delay={0}>
                             <Chip
-                                label="✦ Available for work"
+                                label="✦ Open for Collaboration"
                                 size="small"
                                 sx={{
                                     background: alpha(accent, 0.1),
@@ -193,7 +193,7 @@ const Hero = () => {
                                     fontSize: { xs: '1rem', md: '1.05rem' },
                                 }}
                             >
-                                I craft clean, accessible, and performant web experiences — from pixel-perfect UIs to robust full-stack applications.
+                                I build fast, scalable web applications and turn complex ideas into clean, intuitive products — let&#39;s build something together.
                             </Typography>
                         </AnimatedBox>
 
@@ -259,7 +259,7 @@ const Hero = () => {
                         {/* Social / quick info */}
                         <AnimatedBox delay={440}>
                             <Typography variant="caption" sx={{ color: 'text.disabled' }}>
-                                Based in Malang, Indonesia · Open to remote & hybrid roles
+                                Based in Malang, Indonesia · Available for freelance & project collaboration
                             </Typography>
                         </AnimatedBox>
                     </Stack>

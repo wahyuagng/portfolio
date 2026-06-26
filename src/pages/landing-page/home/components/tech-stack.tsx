@@ -93,7 +93,7 @@ const TechStack = () => {
                         color="text.secondary"
                         sx={{ mt: 1.5, maxWidth: 480, mx: 'auto' }}
                     >
-                        Teknologi dan tools yang saya gunakan sehari-hari dalam pengembangan web dan jaringan.
+                        Technologies and tools I use daily for web development and networking.
                     </Typography>
                 </AnimatedBox>
 

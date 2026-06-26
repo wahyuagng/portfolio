@@ -16,18 +16,18 @@ const educationData = [
     {
         level: 'S1',
         institution: 'Universitas XYZ',
-        major: 'Teknik Informatika',
+        major: 'Informatics Engineering',
         year: '2019 – 2023',
         description:
-            'Mempelajari dasar-dasar ilmu komputer, algoritma, rekayasa perangkat lunak, dan pengembangan aplikasi web maupun mobile.',
+            'Studied computer science fundamentals, algorithms, software engineering, and web and mobile application development.',
     },
     {
         level: 'SMK',
         institution: 'SMK ABC',
-        major: 'Rekayasa Perangkat Lunak',
+        major: 'Software Engineering',
         year: '2016 – 2019',
         description:
-            'Fokus pada pemrograman dasar, desain web, dan pengembangan aplikasi berbasis desktop dan web.',
+            'Focused on programming fundamentals, web design, and desktop and web application development.',
     },
 ];
 
