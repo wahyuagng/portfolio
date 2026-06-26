@@ -52,12 +52,6 @@ export const paths = {
         oidc: {
             signIn: `${ROOTS.AUTH}/oidc/sign-in`,
         },
-        firebase: {
-            signIn: `${ROOTS.AUTH}/firebase/sign-in`,
-            verify: `${ROOTS.AUTH}/firebase/verify`,
-            signUp: `${ROOTS.AUTH}/firebase/sign-up`,
-            resetPassword: `${ROOTS.AUTH}/firebase/reset-password`,
-        },
         auth0: { signIn: `${ROOTS.AUTH}/auth0/sign-in` },
         supabase: {
             signIn: `${ROOTS.AUTH}/supabase/sign-in`,

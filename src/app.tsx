@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { Router } from '@routes/router';
 import { ClientInfo } from '@auth/utils/client-info';
 import { AuthProvider } from '@auth/context/auth-provider';
-import { useFCMNotification } from '@common/firebase/useFCMNotification';
 
 import { usePathname } from 'src/routes/hooks';
 
@@ -19,7 +18,7 @@ import { layoutConfig, SettingsDrawer, SettingsProvider } from 'src/components/s
 
 export default function App() {
     useScrollToTop();
-    useFCMNotification();
+
     useEffect(() => {
         ClientInfo.initialize();
     }, []);

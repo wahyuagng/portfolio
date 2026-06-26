@@ -9,7 +9,7 @@ import { CONFIG } from '../../../global-config';
 
 const HomeLayout = () => (
         <>
-            <title>{`${CONFIG.appName} - Home`}</title>
+            <title>Home</title>
             <Box>
                 <Hero />
                 <Academy/>

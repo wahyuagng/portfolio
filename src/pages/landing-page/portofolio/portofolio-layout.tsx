@@ -6,7 +6,7 @@ import { CONFIG } from '../../../global-config';
 
 const PortofolioLayout = () => (
     <>
-        <title>{`${CONFIG.appName} - Portfolio`}</title>
+        <title>Portfolio</title>
         <Box>
             <PortfolioList />
         </Box>

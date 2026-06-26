@@ -21,15 +21,6 @@ export type ConfigValue = {
         redirectPath: string;
     };
     mapboxApiKey: string;
-    firebase: {
-        appId: string;
-        apiKey: string;
-        projectId: string;
-        authDomain: string;
-        storageBucket: string;
-        measurementId: string;
-        messagingSenderId: string;
-    };
     amplify: { userPoolId: string; userPoolWebClientId: string; region: string };
     auth0: { clientId: string; domain: string; callbackUrl: string };
     supabase: { url: string; key: string };
@@ -65,18 +56,6 @@ export const CONFIG: ConfigValue = {
      * Mapbox
      */
     mapboxApiKey: import.meta.env.VITE_MAPBOX_API_KEY ?? '',
-    /**
-     * Firebase
-     */
-    firebase: {
-        apiKey: import.meta.env.VITE_FIREBASE_API_KEY ?? '',
-        authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN ?? '',
-        projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID ?? '',
-        storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET ?? '',
-        messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID ?? '',
-        appId: import.meta.env.VITE_FIREBASE_APPID ?? '',
-        measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID ?? '',
-    },
     /**
      * Amplify
      */
