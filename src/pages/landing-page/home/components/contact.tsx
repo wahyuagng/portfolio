@@ -15,25 +15,25 @@ const AnimatedBox = styled(Box)<{ delay?: number }>(({ delay = 0 }) => ({
 const contactItems = [
     {
         label: 'WhatsApp',
-        value: '+62 812-3456-7890',
-        href: 'https://wa.me/6281234567890',
+        value: '+62 813-1082-6931',
+        href: 'https://wa.me/6281310826931',
         icon: '💬',
         description: 'Chat langsung via WhatsApp',
     },
     {
         label: 'Email',
-        value: 'wahyuagung@example.com',
-        href: 'mailto:wahyuagung@example.com',
+        value: 'wahyuagungpriambudi@gmail.com',
+        href: 'mailto:wahyuagungpriambudi@gmail.com',
         icon: '✉️',
         description: 'Kirim email kapan saja',
     },
-    {
-        label: 'GitHub',
-        value: 'github.com/wahyuagung',
-        href: 'https://github.com/wahyuagung',
-        icon: '🐙',
-        description: 'Lihat proyek dan kontribusi saya',
-    },
+    // {
+    //     label: 'GitHub',
+    //     value: 'github.com/wahyuagung',
+    //     href: 'https://github.com/wahyuagung',
+    //     icon: '🐙',
+    //     description: 'Lihat proyek dan kontribusi saya',
+    // },
 ];
 
 const Contact = () => {
