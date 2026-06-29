@@ -40,13 +40,15 @@
         "@fontsource-variable/public-sans": "^5.2.6",
         "@fontsource/barlow": "^5.2.6",
         "@iconify/react": "^6.0.0",
+        "@mui/icons-material": "^7.3.11",
         "@mui/material": "^7.1.2",
         "@mui/stylis-plugin-rtl": "^7.1.0",
         "@mui/x-data-grid": "^8.5.3",
         "@mui/x-date-pickers": "^8.5.3",
         "dayjs": "^1.11.13",
         "es-toolkit": "^1.39.3",
-        "firebase": "^11.10.0",        "framer-motion": "^12.18.1",
+        "firebase": "^11.10.0",
+        "framer-motion": "^12.18.1",
         "i18next": "^25.2.1",
         "i18next-browser-languagedetector": "^8.2.0",
         "i18next-resources-to-backend": "^1.2.1",
@@ -63,14 +65,14 @@
         "ua-parser-js": "^2.0.4"
     },
     "optionalDependencies": {
-        "@rollup/rollup-linux-x64-gnu": "^4.0.0",
-        "@rollup/rollup-linux-x64-musl": "^4.0.0",
         "@rollup/rollup-linux-arm64-gnu": "^4.0.0",
         "@rollup/rollup-linux-arm64-musl": "^4.0.0",
-        "@swc/core-linux-x64-gnu": "^1.0.0",
-        "@swc/core-linux-x64-musl": "^1.0.0",
+        "@rollup/rollup-linux-x64-gnu": "^4.0.0",
+        "@rollup/rollup-linux-x64-musl": "^4.0.0",
         "@swc/core-linux-arm64-gnu": "^1.0.0",
-        "@swc/core-linux-arm64-musl": "^1.0.0"
+        "@swc/core-linux-arm64-musl": "^1.0.0",
+        "@swc/core-linux-x64-gnu": "^1.0.0",
+        "@swc/core-linux-x64-musl": "^1.0.0"
     },
     "devDependencies": {
         "@eslint/js": "^9.29.0",

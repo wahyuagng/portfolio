@@ -46,7 +46,7 @@ const Contact = () => {
             id="contact"
             sx={{
                 py: { xs: 8, md: 12 },
-                bgcolor: 'background.default',
+                bgcolor: 'background.paper',
             }}
         >
             <Container maxWidth="lg">

@@ -141,7 +141,7 @@ const PortfolioPreview = () => {
                         variant="overline"
                         sx={{ color: 'primary.main', fontWeight: 600, letterSpacing: 3, fontSize: 12 }}
                     >
-                        What I've built
+                        What I&#39;ve built
                     </Typography>
                     <Typography
                         variant="h2"
