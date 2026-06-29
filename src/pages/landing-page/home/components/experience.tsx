@@ -15,30 +15,21 @@ const AnimatedBox = styled(Box)<{ delay?: number }>(({ delay = 0 }) => ({
 const experiences = [
     {
         role: 'Frontend Developer',
-        company: 'PT. Example Tech',
-        period: '2022 – Present',
+        company: 'PT Mypro Solusindo Informatika',
+        period: '2020 – Present',
         type: 'Full-time',
         description:
-            'Built and maintained enterprise-scale web applications using React and TypeScript. Led UI architecture decisions and collaborated closely with product and backend teams.',
-        tech: ['React', 'TypeScript', 'MUI', 'REST API'],
+            'Developing and maintaining enterprise-scale web applications for large clients including PT Pertamina Lubricants. Projects span dynamic pricing systems, factory production management, and travel booking platforms. Responsible for frontend architecture, multi-level approval workflows, real-time integrations via SignalR, and deployment on Google Cloud with Kubernetes.',
+        tech: ['React', 'TypeScript', 'Vite', 'Material UI', 'Redux Toolkit', 'SignalR', 'Google Cloud'],
     },
     {
-        role: 'Frontend Developer',
-        company: 'Freelance',
-        period: '2020 – 2022',
-        type: 'Freelance',
-        description:
-            'Delivered custom web applications for clients across e-commerce, logistics, and fintech. Handled full frontend lifecycle from design handoff to deployment.',
-        tech: ['React', 'JavaScript', 'Tailwind CSS', 'Firebase'],
-    },
-    {
-        role: 'Web Developer',
-        company: 'CV. Creative Studio',
+        role: 'Developer',
+        company: 'PT. Assist Software Indonesia Pratama',
         period: '2019 – 2020',
         type: 'Full-time',
         description:
-            'Developed landing pages and company profiles using modern HTML/CSS/JS. Maintained and improved existing client websites.',
-        tech: ['HTML', 'CSS', 'JavaScript', 'WordPress'],
+            'Contributed to software development projects as a junior developer, building web-based applications and supporting the full development lifecycle from requirements gathering to delivery.',
+        tech: ['HTML', 'CSS', 'JavaScript', 'REST API'],
     },
 ];
 

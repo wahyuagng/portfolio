@@ -1,5 +1,5 @@
 import { styled, useTheme, keyframes } from '@mui/material/styles';
-import { Box, Chip, Stack, alpha, Button, Container, Typography } from '@mui/material';
+import { Box, Chip, Stack, alpha, Container, Typography } from '@mui/material';
 
 // ─── Animations ───────────────────────────────────────────────────────────────
 
@@ -25,46 +25,29 @@ type Project = {
 const PROJECTS: Project[] = [
     {
         id: 1,
-        title: 'E-Commerce Platform',
+        title: 'Dynamic Pricing — PT Pertamina Lubricants',
         category: 'Web App',
-        description: 'Full-featured online store with cart, checkout, and product management built with React and Node.js.',
-        tech: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
+        description:
+            'Dynamic pricing management system for PT Pertamina Lubricants (PTPL) to handle special pricing proposals for corporate clients and distributors. Features multi-level approval workflows (submit → approve → release), automated price calculation covering HLP, transport cost, marketing cost, and profit margin, customer hierarchy management, real-time SignalR notifications, and export to Excel/PDF. Built for two separate role modules: Production (HQ admin) and CAM (Customer Account Manager). Deployed on Google Cloud with Kubernetes.',
+        tech: ['React 18', 'TypeScript', 'Vite', 'Material UI', 'Redux Toolkit', 'Formik', 'Axios', 'SignalR', 'Google Cloud', 'Kubernetes'],
         liveUrl: '#',
         repoUrl: '#',
     },
     {
         id: 2,
-        title: 'Dashboard Analytics',
-        category: 'Dashboard',
-        description: 'Real-time business monitoring dashboard with interactive charts, sales reports, and performance insights.',
-        tech: ['Vue.js', 'Chart.js', 'Express', 'PostgreSQL'],
+        title: 'SIAP — Factory Production Management',
+        category: 'Web App',
+        description: 'End-to-end factory production management system for PT Pertamina Lubricants covering the full lubricant manufacturing workflow: Purchase Order → Raw Material Reception (QR scan, tanker, ISO tank) → Blending → Filling → Inventory → Delivery. Includes inventory tracking, storage tank management, downtime reporting, BOM, and comprehensive master data. Secured with JWT + MFA authentication and role-based access control.',
+        tech: ['React 19', 'TypeScript', 'Vite', 'Material UI', 'JWT + MFA', 'React Hook Form', 'Zod', 'FullCalendar', 'DnD Kit', 'i18n'],
         liveUrl: '#',
         repoUrl: '#',
     },
     {
         id: 3,
-        title: 'Mobile Banking App',
-        category: 'Mobile',
-        description: 'Banking app with transfer, balance check, transaction history, and real-time notifications.',
-        tech: ['React Native', 'Firebase', 'Redux', 'TypeScript'],
-        liveUrl: '#',
-        repoUrl: '#',
-    },
-    {
-        id: 4,
-        title: 'SaaS Project Management',
-        category: 'Web App',
-        description: 'Collaborative project tool with kanban boards, task assignment, deadlines, and team chat.',
-        tech: ['Next.js', 'Prisma', 'tRPC', 'TypeScript'],
-        liveUrl: '#',
-        repoUrl: '#',
-    },
-    {
-        id: 5,
-        title: 'AI Content Generator',
-        category: 'AI Tool',
-        description: 'AI-powered writing assistant for generating marketing copy, blog posts, and social media content.',
-        tech: ['React', 'OpenAI API', 'Node.js', 'Tailwind CSS'],
+        title: 'Hajj & Umrah Travel PWA',
+        category: 'PWA',
+        description: 'Progressive Web App for Hajj and Umrah travel services with three layers: a public landing page, a pilgrim-facing app, and an admin panel. Pilgrim features include a savings account system for installment payments, deposit/withdrawal with admin approval, referral and commission tracking, and package booking with detailed itineraries. Admin panel manages packages, pricing, availability, bookings, and financial reports. Multi-role with separate route guards.',
+        tech: ['React 18', 'TypeScript', 'Vite', 'Redux Toolkit', 'Tailwind CSS', 'NextUI', 'Formik', 'Yup', 'Leaflet', 'React Router v6'],
         liveUrl: '#',
         repoUrl: '#',
     },
@@ -137,10 +120,7 @@ const PortfolioPreview = () => {
             <Container maxWidth="lg">
                 {/* Header */}
                 <AnimatedBox delay={0} sx={{ textAlign: 'center', mb: 6 }}>
-                    <Typography
-                        variant="overline"
-                        sx={{ color: 'primary.main', fontWeight: 600, letterSpacing: 3, fontSize: 12 }}
-                    >
+                    <Typography variant="overline" sx={{ color: 'primary.main', fontWeight: 600, letterSpacing: 3, fontSize: 12 }}>
                         What I&#39;ve built
                     </Typography>
                     <Typography
@@ -217,14 +197,7 @@ const PortfolioPreview = () => {
 
                                     {/* Content */}
                                     <Box sx={{ flex: 1, minWidth: 0 }}>
-                                        <Stack
-                                            direction="row"
-                                            alignItems="center"
-                                            justifyContent="space-between"
-                                            flexWrap="wrap"
-                                            gap={1}
-                                            mb={0.75}
-                                        >
+                                        <Stack direction="row" alignItems="center" justifyContent="space-between" flexWrap="wrap" gap={1} mb={0.75}>
                                             <Stack direction="row" alignItems="center" gap={1.5}>
                                                 <Typography fontWeight={700} fontSize={15} color="text.primary">
                                                     {project.title}
@@ -245,55 +218,51 @@ const PortfolioPreview = () => {
 
                                             {/* Actions */}
                                             <Stack direction="row" gap={1}>
-                                                <Button
-                                                    variant="outlined"
-                                                    size="small"
-                                                    href={project.repoUrl}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                    sx={{
-                                                        fontSize: 11,
-                                                        fontWeight: 600,
-                                                        textTransform: 'none',
-                                                        borderRadius: 1.5,
-                                                        py: 0.4,
-                                                        px: 1.5,
-                                                        borderColor: alpha(accent, 0.3),
-                                                        color: 'text.secondary',
-                                                        '&:hover': {
-                                                            borderColor: 'primary.main',
-                                                            color: 'primary.main',
-                                                            bgcolor: alpha(accent, 0.06),
-                                                        },
-                                                    }}
-                                                >
-                                                    Code
-                                                </Button>
-                                                <Button
-                                                    variant="contained"
-                                                    size="small"
-                                                    href={project.liveUrl}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                    sx={{
-                                                        fontSize: 11,
-                                                        fontWeight: 700,
-                                                        textTransform: 'none',
-                                                        borderRadius: 1.5,
-                                                        py: 0.4,
-                                                        px: 1.5,
-                                                    }}
-                                                >
-                                                    Live
-                                                </Button>
+                                                {/*<Button*/}
+                                                {/*    variant="outlined"*/}
+                                                {/*    size="small"*/}
+                                                {/*    href={project.repoUrl}*/}
+                                                {/*    target="_blank"*/}
+                                                {/*    rel="noreferrer"*/}
+                                                {/*    sx={{*/}
+                                                {/*        fontSize: 11,*/}
+                                                {/*        fontWeight: 600,*/}
+                                                {/*        textTransform: 'none',*/}
+                                                {/*        borderRadius: 1.5,*/}
+                                                {/*        py: 0.4,*/}
+                                                {/*        px: 1.5,*/}
+                                                {/*        borderColor: alpha(accent, 0.3),*/}
+                                                {/*        color: 'text.secondary',*/}
+                                                {/*        '&:hover': {*/}
+                                                {/*            borderColor: 'primary.main',*/}
+                                                {/*            color: 'primary.main',*/}
+                                                {/*            bgcolor: alpha(accent, 0.06),*/}
+                                                {/*        },*/}
+                                                {/*    }}*/}
+                                                {/*>*/}
+                                                {/*    Code*/}
+                                                {/*</Button>*/}
+                                                {/*<Button*/}
+                                                {/*    variant="contained"*/}
+                                                {/*    size="small"*/}
+                                                {/*    href={project.liveUrl}*/}
+                                                {/*    target="_blank"*/}
+                                                {/*    rel="noreferrer"*/}
+                                                {/*    sx={{*/}
+                                                {/*        fontSize: 11,*/}
+                                                {/*        fontWeight: 700,*/}
+                                                {/*        textTransform: 'none',*/}
+                                                {/*        borderRadius: 1.5,*/}
+                                                {/*        py: 0.4,*/}
+                                                {/*        px: 1.5,*/}
+                                                {/*    }}*/}
+                                                {/*>*/}
+                                                {/*    Live*/}
+                                                {/*</Button>*/}
                                             </Stack>
                                         </Stack>
 
-                                        <Typography
-                                            variant="body2"
-                                            color="text.secondary"
-                                            sx={{ lineHeight: 1.65, mb: 1.5, fontSize: 13 }}
-                                        >
+                                        <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.65, mb: 1.5, fontSize: 13 }}>
                                             {project.description}
                                         </Typography>
 

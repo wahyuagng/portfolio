@@ -9,18 +9,18 @@ import PortfolioPreview from '@pages/landing-page/home/components/portfolio-prev
 import { Box } from '@mui/material';
 
 const HomeLayout = () => (
-        <>
-            <title>Home</title>
-            <Box>
-                <Navbar />
-                <Hero />
-                <About />
-                <Experience />
-                <TechStack />
-                <PortfolioPreview />
-<Contact />
-            </Box>
-        </>
-    )
+    <>
+        <title>Home</title>
+        <Box>
+            <Navbar />
+            <Hero />
+            <About />
+            <Experience />
+            <TechStack />
+            <PortfolioPreview />
+            <Contact />
+        </Box>
+    </>
+);
 
 export default HomeLayout;
